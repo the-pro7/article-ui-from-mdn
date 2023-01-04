@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header nav {
+  font-family: Arial, Helvetica, sans-serif;
+  display: grid;
+  grid-auto-flow: row;
+  padding: 2em;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1.5fr));
+  background-color: #000;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3333333333);
+}
+header nav .logo h1 {
+  color: #fff;
+}
+header nav .logo h1 span {
+  font-weight: bold;
+  color: rgb(0, 150, 255);
+}
+header .nav_list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+}
+header .nav_list li {
+  list-style: none;
+}
+header .nav_list li a {
+  text-decoration: none;
+  color: #fff;
+}
+header .nav_list .up {
+  position: relative;
+}
+header .nav_list .up::after {
+  content: "";
+  background-color: rgb(0, 150, 255);
+  font-size: 5rem;
+  height: 5px;
+  width: 5px;
+  top: 0;
+  border-radius: 50%;
+  position: absolute;
+  margin-left: 0.05em;
+}
+header .nav_list li:nth-last-of-type(1) {
+  margin-left: auto;
+  border: 2px solid #fff;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  border-radius: 2pt;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.main {
+  width: 100%;
+  background-color: rgb(35, 40, 44);
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 3em;
+  color: #fff;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+.main .container {
+  display: flex;
+  justify-content: space-between;
+}
+.main .main-section {
+  padding: 2.5em;
+  width: 80%;
+  margin: 0 auto;
+}
+.main .main-section h1 {
+  font-size: 3rem;
+  margin-bottom: 1em;
+}
+.main .main-section p {
+  font-size: clamp(1rem, 1vw, 3rem);
+  line-height: 2;
+}
+.main .sidebar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 10px;
+  text-align: left;
+  width: 20%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+.main .sidebar h3 {
+  margin-bottom: 1em;
+}
+.main .sidebar .see_also {
+  padding: 1em;
+  border-left: 3px solid rgb(0, 150, 255);
+}
+.main .see_section {
+  width: 70%;
+  margin: 0 auto;
+  border: 2px solid rgb(255, 255, 255);
+  padding: 2em;
+  border-radius: 5pt;
+  background-color: rgba(255, 255, 255, 0.8);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  color: rgba(0, 0, 0, 0.6);
+}
+.main .see_section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.1em;
+}
+.main .see_section p + p {
+  margin-top: 1em;
+}/*# sourceMappingURL=styles.css.map */
